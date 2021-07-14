@@ -3,6 +3,17 @@ namespace myndyou\shortcodes;
 use function myndyou\utilities\{get_alert};
 use function myndyou\fns\templates\{render_template,template_exists};
 
+/**
+ * Displays the Team Member CPT.
+ *
+ * @param      array  $atts {
+ *   @type  string  $type     Filter the Team Members by the `staff_type` taxonomy.
+ *   @type  string  $template Specify the template for displaying the Team Members.
+ *   @type  int     $cols     Number of columns for the display.
+ * }
+ *
+ * @return     string  HTML for a Team Member listing.
+ */
 function team_members( $atts ){
   $args = shortcode_atts([
     'type'      => null,

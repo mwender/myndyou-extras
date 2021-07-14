@@ -7,7 +7,7 @@
  * Author URI:      https://mwender.com
  * Text Domain:     myndyou-extras
  * Domain Path:     /languages
- * Version:         0.2.0
+ * Version:         0.4.0
  *
  * @package         myndyou_Extras
  */
