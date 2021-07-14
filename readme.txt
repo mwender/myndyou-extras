@@ -1,4 +1,4 @@
-=== SFG Medicare Extras ===
+=== MyndYou Extras ===
 Contributors: TheWebist
 Donate link: https://mwender.com/
 Tags: shortcodes
@@ -9,25 +9,27 @@ Stable tag: 0.4.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Extras for the SFG Medicare website.
+Extras for the MyndYou website.
 
 == Description ==
 
-This plugin provides extra functionality for the SFG Medicare website.
+This plugin provides extra functionality for the MyndYou website.
 
-=== Webinar Registration Link Shortcode ===
+=== Team Members CPT Shortcode ===
 
-Add `[webinar_registration_link]` to any event post to link to the Webinar Registration page with the event date/time matching the event where you added the shortcode.
+Add `[team_members]` to list the Team Member CPT.
 
 ```
 /**
- * Returns a link to the webinar registration page.
+ * Displays the Team Member CPT.
  *
  * @param      array  $atts {
- *   @type  string  $registration_link URL to the webinar registration page. Defaults to /webinar-registration/.
+ *   @type  string  $type     Filter the Team Members by the `staff_type` taxonomy.
+ *   @type  string  $template Specify the template for displaying the Team Members.
+ *   @type  int     $cols     Number of columns for the display.
  * }
  *
- * @return     string  The webinar link.
+ * @return     string  HTML for a Team Member listing.
  */
 ```
 
