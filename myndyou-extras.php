@@ -1,23 +1,30 @@
 <?php
 /**
- * Plugin Name:     SFG Medicare Extras
+ * Plugin Name:     MyndYou Extras
  * Plugin URI:      PLUGIN SITE HERE
- * Description:     Various extensions for the SFG Medicare website
+ * Description:     Various extensions for the MyndYou website
  * Author:          TheWebist
  * Author URI:      https://mwender.com
- * Text Domain:     sfgmedicare-extras
+ * Text Domain:     myndyou-extras
  * Domain Path:     /languages
  * Version:         0.2.0
  *
- * @package         Sfgmedicare_Extras
+ * @package         myndyou_Extras
  */
 
 // Your code starts here.
-define( 'SFG_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
-define( 'SFG_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+define( 'MYDU_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+define( 'MYDU_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
-require_once( SFG_PLUGIN_PATH . 'lib/fns/shortcodes.php' );
-require_once( SFG_PLUGIN_PATH . 'lib/fns/utilities.php' );
+// Load Composer dependencies
+require_once 'vendor/autoload.php';
+
+// Load required files
+require_once( MYDU_PLUGIN_PATH . 'lib/fns/admin-custom-columns.php' );
+require_once( MYDU_PLUGIN_PATH . 'lib/fns/enqueues.php' );
+require_once( MYDU_PLUGIN_PATH . 'lib/fns/shortcodes.php' );
+require_once( MYDU_PLUGIN_PATH . 'lib/fns/templates.php' );
+require_once( MYDU_PLUGIN_PATH . 'lib/fns/utilities.php' );
 
 /**
  * Enhanced logging.

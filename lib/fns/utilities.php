@@ -1,5 +1,5 @@
 <?php
-namespace sfgmedicare\utilities;
+namespace myndyou\utilities;
 
 /**
  * Returns an HTML alert message
@@ -25,6 +25,6 @@ function get_alert( $atts ){
 
   $search = ['{type}', '{title}', '{description}', '{css_classes}' ];
   $replace = [ esc_attr( $args['type'] ), $title, $args['description'], $args['css_classes'] ];
-  $html = file_get_contents( SFG_PLUGIN_PATH . 'lib/html/alert.html' );
+  $html = file_get_contents( MYDU_PLUGIN_PATH . 'lib/html/alert.html' );
   return str_replace( $search, $replace, $html );
 }

@@ -9,7 +9,7 @@ module.exports = function( grunt ) {
 
 		addtextdomain: {
 			options: {
-				textdomain: 'sfgmedicare-extras',
+				textdomain: 'myndyou-extras',
 			},
 			update_all_domains: {
 				options: {
@@ -32,8 +32,8 @@ module.exports = function( grunt ) {
 				options: {
 					domainPath: '/languages',
 					exclude: [ '\.git/*', 'bin/*', 'node_modules/*', 'tests/*' ],
-					mainFile: 'sfgmedicare-extras.php',
-					potFilename: 'sfgmedicare-extras.pot',
+					mainFile: 'myndyou-extras.php',
+					potFilename: 'myndyou-extras.pot',
 					potHeaders: {
 						poedit: true,
 						'x-poedit-keywordslist': true

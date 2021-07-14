@@ -1,0 +1,9 @@
+<div class="grid-container {{cols}}">
+  {{#each team_members}}
+  <div class="item">
+    <a href="{{link}}" title="{{name_esc}}"><img src="{{image}}" alt="{{name_esc}}"/></a>
+    <h3><a href="{{link}}" title="{{name_esc}}">{{name}}</a></h3>
+    <p class="tagline">{{tagline}}</p>
+  </div>
+  {{/each}}
+</div>

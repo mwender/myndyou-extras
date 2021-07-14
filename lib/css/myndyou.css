@@ -1,0 +1,32 @@
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  font-family: 'Poppins', sans-serif;
+  max-width: 100%;
+}
+.grid-container.two-cols{
+  grid-template-columns:  1fr 1fr;
+}
+.grid-container.two-cols .item{
+  max-width: 250px;
+  justify-self: center;
+}
+.grid-container .item h3{
+  color:  #2c2c51;
+  margin-bottom: 0;
+  font-size:  1.25rem;
+  font-weight: 600;
+}
+.grid-container .item h4{
+  color: #009fde;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-top: 0;
+}
+.grid-container .item .tagline{
+  color: #5a5a5a;
+  font-size: 14px;
+  font-weight: 600;
+}
