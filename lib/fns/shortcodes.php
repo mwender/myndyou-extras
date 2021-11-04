@@ -4,6 +4,30 @@ use function myndyou\utilities\{get_alert};
 use function myndyou\fns\templates\{render_template,template_exists};
 
 /**
+ * Returns a link to the Schedule a Consultation page.
+ *
+ * Filter this link by adding `?consultant=` to the URL with the
+ * value equal to the consultant we want to use. Defaults to
+ * `/schedule-a-consultation/`.
+ *
+ * @return     string  URL to the Schedule a Consultation page.
+ */
+function consultation_link(){
+  $consultant = get_query_var( 'consultant', '' );
+  switch( $consultant ){
+    case 'ejay':
+      $link = 'schedule-a-consultation-with-ejay';
+      break;
+
+    default:
+      $link = 'schedule-a-consultation';
+      break;
+  }
+  return site_url( $link );
+}
+add_shortcode( 'consultation_link', __NAMESPACE__ . '\\consultation_link' );
+
+/**
  * Displays the Team Member CPT.
  *
  * @param      array  $atts {

@@ -25,6 +25,7 @@ require_once( MYDU_PLUGIN_PATH . 'lib/fns/enqueues.php' );
 require_once( MYDU_PLUGIN_PATH . 'lib/fns/shortcodes.php' );
 require_once( MYDU_PLUGIN_PATH . 'lib/fns/templates.php' );
 require_once( MYDU_PLUGIN_PATH . 'lib/fns/utilities.php' );
+require_once( MYDU_PLUGIN_PATH . 'lib/fns/wpquery.php' );
 
 /**
  * Enhanced logging.
