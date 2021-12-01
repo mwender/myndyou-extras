@@ -22,6 +22,10 @@ function consultation_link(){
       $link = 'schedule-a-consultation-with-ejay';
       break;
 
+    case 'kathy':
+      $link = 'schedule-a-consultation-with-kathy';
+      break;
+
     default:
       $link = 'schedule-a-consultation';
       break;

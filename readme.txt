@@ -5,7 +5,7 @@ Tags: shortcodes
 Requires at least: 5.7
 Tested up to: 5.7.2
 Requires PHP: 7.4
-Stable tag: 0.5.2
+Stable tag: 0.5.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,9 @@ Add `[team_members]` to list the Team Member CPT.
 ```
 
 == Changelog ==
+
+= 0.5.3 =
+* Adding `kathy` as an option for the `[consultation_link/]` shortcode.
 
 = 0.5.2 =
 * Adding option to use `contact` as query variable for `[consultation_link]` shortcode.
