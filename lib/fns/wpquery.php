@@ -12,6 +12,7 @@ namespace myndyou\wpquery;
 function consultation_query_vars( $qvars ){
   $qvars[] = 'consultant';
   $qvars[] = 'contact';
+  $qvars[] = 'cntct';
   return $qvars;
 }
 add_filter( 'query_vars', __NAMESPACE__ . '\\consultation_query_vars' );

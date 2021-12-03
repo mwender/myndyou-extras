@@ -15,14 +15,22 @@ use function myndyou\fns\templates\{render_template,template_exists};
 function consultation_link(){
   $consultant = get_query_var( 'consultant', '' );
   $contact = get_query_var( 'contact', '' );
+  $cntct = get_query_var( 'cntct', '' );
 
-  $switch_var = ( ! empty( $contact ) )? $contact : $consultant ;
+  if( !empty( $consultant ) )
+    $switch_var = $consultant;
+  if( !empty( $contact ) )
+    $switch_var = $contact;
+  if( !empty( $cntct ) )
+    $switch_var = $cntct;
+
   switch( $switch_var ){
     case 'ejay':
       $link = 'schedule-a-consultation-with-ejay';
       break;
 
     case 'kathy':
+    case 'ko':
       $link = 'schedule-a-consultation-with-kathy';
       break;
 
