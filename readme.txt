@@ -5,7 +5,7 @@ Tags: shortcodes
 Requires at least: 5.7
 Tested up to: 5.8.2
 Requires PHP: 7.4
-Stable tag: 0.5.4
+Stable tag: 0.6.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,10 @@ Add `[team_members]` to list the Team Member CPT.
 ```
 
 == Changelog ==
+
+= 0.6.0 =
+* Adding SCSS processing to `package.json`.
+* Adding Flexbox Grid CSS.
 
 = 0.5.4 =
 * Adding `cntct` as a query variable option for parsing by the `[consultation_link /]` shortcode.
