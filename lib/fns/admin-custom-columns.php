@@ -45,7 +45,7 @@ function custom_team_member_column( $column, $post_id ){
       break;
 
     case 'staff_type':
-      $staff_types = get_the_term_list( $post_id, 'staff_type' );
+      $staff_types = get_the_term_list( $post_id, 'staff_type', null, ', ' );
       if( is_string( $staff_types ) )
         echo $staff_types;
       break;
