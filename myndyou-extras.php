@@ -13,6 +13,9 @@
  */
 
 // Your code starts here.
+$css_dir = ( stristr( site_url(), '.local' ) || SCRIPT_DEBUG )? 'css' : 'css/dist' ;
+define( 'MYDU_CSS_DIR', $css_dir );
+define( 'MYDU_DEV_ENV', stristr( site_url(), '.local' ) );
 define( 'MYDU_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'MYDU_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 

@@ -1,0 +1,27 @@
+.item{
+  text-align: left;
+  width: 100%;
+
+  img{
+    width: 100%;
+  }
+
+  h3{
+    color:  #2c2c51;
+    margin-bottom: 0;
+    font-size:  1.25rem;
+    font-weight: 600;
+  }
+  h4{
+    color: #009fde;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  .tagline{
+    color: #5a5a5a;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

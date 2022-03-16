@@ -6,11 +6,14 @@
   "scripts": {
     "start": "grunt default",
     "readme": "grunt readme",
-    "i18n": "grunt i18n"
+    "i18n": "grunt i18n",
+    "sassdev": "sass --sourcemap=inline lib/scss/main.scss lib/css/main.css",
+    "sassprod": "sass --style compressed --sourcemap=none lib/scss/main.scss lib/css/dist/main.css"
   },
   "devDependencies": {
     "grunt": "^1.4.1",
     "grunt-wp-i18n": "^1.0.3",
-    "grunt-wp-readme-to-markdown": "^2.0.1"
+    "grunt-wp-readme-to-markdown": "^2.0.1",
+    "sass": "^1.49.9"
   }
 }
