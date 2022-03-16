@@ -35,6 +35,9 @@ Add `[team_members]` to list the Team Member CPT.
 
 ## Changelog ##
 
+### 0.6.2 ###
+* Adding `center` attribute to `[team_members]`.
+
 ### 0.6.1 ###
 * Adding comma between "Staff Types" listing in Team Members CPT admin column.
 

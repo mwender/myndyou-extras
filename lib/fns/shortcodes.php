@@ -49,6 +49,7 @@ add_shortcode( 'consultation_link', __NAMESPACE__ . '\\consultation_link' );
  *   @type  string  $type     Filter the Team Members by the `staff_type` taxonomy.
  *   @type  string  $template Specify the template for displaying the Team Members.
  *   @type  int     $cols     Number of columns for the display.
+ *   @type  bool    $center   Center align content. Defaults to `false`.
  * }
  *
  * @return     string  HTML for a Team Member listing.
@@ -58,7 +59,11 @@ function team_members( $atts ){
     'type'      => null,
     'template'  => null,
     'cols'      => null,
+    'center'    => false,
   ], $atts );
+
+  if ( $args['center'] === 'false' ) $args['center'] = false; // just to be sure...
+  $args['center'] = (bool) $args['center'];
 
   static $already_run = false;
 
@@ -83,6 +88,7 @@ function team_members( $atts ){
   $data = [];
 
   $data['cols'] = ( is_numeric( $args['cols'] ) && is_int( $args['cols'] ) )? intval( 12/$args['cols'] ) : 3 ;
+  $data['center'] = ( $args['center'] )? ' center-md' : '' ;
 
   if( $team_members ){
     foreach( $team_members as $member ){
