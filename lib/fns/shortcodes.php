@@ -81,13 +81,8 @@ function team_members( $atts ){
   $team_members = get_posts( $query_args );
 
   $data = [];
-  if( $args['cols'] ){
-    switch( $args['cols'] ){
-      case 2:
-        $data['cols'] = 'two-cols';
-        break;
-    }
-  }
+
+  $data['cols'] = ( is_numeric( $args['cols'] ) && is_int( $args['cols'] ) )? intval( 12/$args['cols'] ) : 3 ;
 
   if( $team_members ){
     foreach( $team_members as $member ){
@@ -104,10 +99,7 @@ function team_members( $atts ){
   }
   $template = ( ! is_null( $args['template'] ) && template_exists( $args['template'] ) )? $args['template'] : 'team-members' ;
   $html = render_template( $template, $data );
-  if ( \Elementor\Plugin::$instance->editor->is_edit_mode() && ! $already_run ){
-    $html.= '<style>' . file_get_contents( MYDU_PLUGIN_PATH . 'lib/css/myndyou.css' ) . '</style>';
-    $already_run = true;
-  }
+
   return $html;
 }
 add_shortcode( 'team_members', __NAMESPACE__ . '\\team_members' );

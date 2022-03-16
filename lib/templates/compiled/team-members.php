@@ -30,8 +30,8 @@ use \LightnCandy\SafeString as SafeString;use \LightnCandy\Runtime as LR;return 
     );
     
     $inary=is_array($in);
-    return '<div class="grid-container">
-'.LR::sec($cx, (($inary && isset($in['team_members'])) ? $in['team_members'] : null), null, $in, true, function($cx, $in) {$inary=is_array($in);return '  <div class="item">
+    return '<div class="row">
+'.LR::sec($cx, (($inary && isset($in['team_members'])) ? $in['team_members'] : null), null, $in, true, function($cx, $in) {$inary=is_array($in);return '  <div class="item col-md-3">
     <a href="'.htmlspecialchars((string)(($inary && isset($in['link'])) ? $in['link'] : null), ENT_QUOTES, 'UTF-8').'"><img src="'.htmlspecialchars((string)(($inary && isset($in['image'])) ? $in['image'] : null), ENT_QUOTES, 'UTF-8').'" alt="'.htmlspecialchars((string)(($inary && isset($in['name_esc'])) ? $in['name_esc'] : null), ENT_QUOTES, 'UTF-8').'"/></a>
     <h3><a href="'.htmlspecialchars((string)(($inary && isset($in['link'])) ? $in['link'] : null), ENT_QUOTES, 'UTF-8').'" title="'.htmlspecialchars((string)(($inary && isset($in['name_esc'])) ? $in['name_esc'] : null), ENT_QUOTES, 'UTF-8').'">'.htmlspecialchars((string)(($inary && isset($in['name'])) ? $in['name'] : null), ENT_QUOTES, 'UTF-8').'</a></h3>
     <h4>'.htmlspecialchars((string)(($inary && isset($in['title'])) ? $in['title'] : null), ENT_QUOTES, 'UTF-8').'</h4>
