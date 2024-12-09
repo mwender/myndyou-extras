@@ -5,7 +5,7 @@ Tags: shortcodes
 Requires at least: 5.7
 Tested up to: 5.8.2
 Requires PHP: 7.4
-Stable tag: 0.6.1
+Stable tag: 0.6.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,9 @@ Add `[team_members]` to list the Team Member CPT.
 
 == Changelog ==
 
+= 0.6.3 =
+* Updating CSS classes on Team Members from `col-md-3` to `col-sm-3 col-xs-6`. This means we have 4 columns of Team Members at tablet and larger screen sizes and 2 columns at sizes below tablet.
+ 
 = 0.6.2 =
 * Adding `center` attribute to `[team_members]`.
 
