@@ -25,6 +25,7 @@ require_once 'vendor/autoload.php';
 // Load required files
 require_once( MYDU_PLUGIN_PATH . 'lib/fns/admin-custom-columns.php' );
 require_once( MYDU_PLUGIN_PATH . 'lib/fns/enqueues.php' );
+require_once( MYDU_PLUGIN_PATH . 'lib/fns/prefetching.php' );
 require_once( MYDU_PLUGIN_PATH . 'lib/fns/shortcodes.php' );
 require_once( MYDU_PLUGIN_PATH . 'lib/fns/templates.php' );
 require_once( MYDU_PLUGIN_PATH . 'lib/fns/utilities.php' );

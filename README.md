@@ -2,10 +2,10 @@
 **Contributors:** [thewebist](https://profiles.wordpress.org/thewebist/)  
 **Donate link:** https://mwender.com/  
 **Tags:** shortcodes  
-**Requires at least:** 5.7  
-**Tested up to:** 5.8.2  
-**Requires PHP:** 7.4  
-**Stable tag:** 0.6.3  
+**Requires at least:** 6.4.0  
+**Tested up to:** 6.7.1  
+**Requires PHP:** 8.1  
+**Stable tag:** 0.7.0  
 **License:** GPLv2 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -33,7 +33,20 @@ Add `[team_members]` to list the Team Member CPT.
  */
 ```
 
+# JSON Files Prefetching #
+
+This plugin automatically generates `<link rel="prefetch">` tags for all JSON files in the Media Library. This helps improve page performance by prefetching JSON resources that may be needed on the frontend.
+
+Features:
+* Queries all JSON files from the Media Library.
+* Outputs prefetch tags in the `<head>` of the frontend pages.
+* Caches results using the WP Transient API to minimize database queries.
+* Automatically refreshes the cache when a new JSON file is uploaded.
+
 ## Changelog ##
+
+### 0.7.0 ###
+* Adding prefetching for JSON files.
 
 ### 0.6.3 ###
 * Updating CSS classes on Team Members from `col-md-3` to `col-sm-3 col-xs-6`. This means we have 4 columns of Team Members at tablet and larger screen sizes and 2 columns at sizes below tablet.
